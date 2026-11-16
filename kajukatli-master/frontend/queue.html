@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f2f0">
+  <title>Alert queue — AML Graph</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="site-pages.css">
+  <link rel="stylesheet" href="analyst.css">
+</head>
+<body>
+  <header>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="wordmark" href="index.html"><span aria-hidden="true"></span>AML GRAPH</a>
+      <div class="nav-links" id="nav-links">
+        <a href="approach.html">Approach</a><a href="patterns.html">Patterns</a>
+        <a href="queue.html" aria-current="page">Alert queue</a><a href="evaluation.html">Evaluation</a>
+      </div>
+      <div class="nav-actions">
+        <a class="nav-cta" href="investigation.html">Detector cases</a>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="analyst-shell">
+    <section class="analyst-hero">
+      <p class="eyebrow">Analyst workflow · saved ranked alerts</p>
+      <h1>Alert queue</h1>
+      <p class="section-lede">Review the highest-scored saved clusters, record a decision, and open a printable case report. A score is a review priority, not a finding of wrongdoing.</p>
+      <p id="queue-status" class="analyst-status" role="status">Loading saved alerts…</p>
+    </section>
+
+    <section class="queue-summary" aria-label="Saved report summary">
+      <div><strong id="queue-count">—</strong><span>Saved alerts</span></div>
+      <div><strong id="alerts-per-hit">—</strong><span>Test alerts per true hit</span></div>
+      <p id="hit-summary" class="muted">Alerts-per-hit is read from the saved final report at the 50% positive-edge threshold.</p>
+    </section>
+
+    <section class="queue-filters" aria-label="Filter alerts">
+      <label>Typology
+        <select id="typology-filter"><option value="">All typologies</option></select>
+      </label>
+      <label>Minimum score
+        <input id="score-filter" type="number" min="0" max="100" step="1" value="0">
+      </label>
+      <button id="clear-filters" class="text-button" type="button">Clear filters</button>
+      <span id="filter-count" class="muted"></span>
+    </section>
+
+    <section class="queue-table-wrap" aria-label="Ranked alerts">
+      <table class="analyst-table">
+        <thead><tr><th>Rank</th><th>Score</th><th>Typology</th><th>Accounts</th><th>Transfers</th><th>Decision</th><th></th></tr></thead>
+        <tbody id="queue-rows"><tr><td colspan="7" class="empty-row">Loading saved alert export…</td></tr></tbody>
+      </table>
+    </section>
+    <p class="analyst-footnote">Queue rows come from the saved M8 ranked alert export (currently capped at its configured export limit). Decision notes are stored locally under <code>outputs/review/decisions.json</code>.</p>
+  </main>
+  <script src="site-pages.js" defer></script>
+  <script src="queue.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f2f0">
+  <title>Printable case report — AML Graph</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="site-pages.css">
+  <link rel="stylesheet" href="analyst.css">
+</head>
+<body>
+  <header class="no-print">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="wordmark" href="index.html"><span aria-hidden="true"></span>AML GRAPH</a>
+      <div class="nav-links" id="nav-links">
+        <a href="approach.html">Approach</a><a href="patterns.html">Patterns</a>
+        <a href="queue.html">Alert queue</a><a href="evaluation.html">Evaluation</a>
+      </div>
+      <div class="nav-actions">
+        <button id="print-report" class="nav-cta" type="button">Print report</button>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+      </div>
+    </nav>
+  </header>
+  <main class="analyst-shell report-shell">
+    <p class="eyebrow">AML Graph · Analyst case report</p>
+    <h1 id="report-title">Loading case report…</h1>
+    <p id="report-summary" class="report-narrative"></p>
+    <div class="report-meta">
+      <div><strong>Typology</strong><span id="report-typology">—</span></div>
+      <div><strong>Score</strong><span id="report-score">—</span></div>
+      <div><strong>Time range (UTC)</strong><span id="report-time">—</span></div>
+      <div><strong>Decision</strong><span id="report-decision">—</span></div>
+    </div>
+    <section class="report-section">
+      <h2>Accounts</h2>
+      <p id="report-accounts">—</p>
+    </section>
+    <section class="report-section">
+      <h2>Matched conditions</h2>
+      <ul id="report-conditions"></ul>
+    </section>
+    <section class="report-section">
+      <h2>Matched transfers</h2>
+      <table class="analyst-table report-table">
+        <thead><tr><th>Time (UTC)</th><th>From</th><th>To</th><th>Amount</th><th>Currency</th></tr></thead>
+        <tbody id="report-transfers"><tr><td colspan="5" class="empty-row">Loading transfers…</td></tr></tbody>
+      </table>
+      <p id="report-omitted" class="muted"></p>
+    </section>
+    <section class="report-section">
+      <h2>Analyst note</h2>
+      <p id="report-note" class="report-note">No analyst note recorded.</p>
+    </section>
+    <p class="report-disclaimer">Candidate for review only. This report is generated from saved case evidence and the deterministic template narrative; no outside AI service is used.</p>
+    <p id="report-status" class="analyst-status no-print" role="status"></p>
+  </main>
+  <script src="site-pages.js" defer></script>
+  <script src="case-report.js" defer></script>
+</body>
+</html>

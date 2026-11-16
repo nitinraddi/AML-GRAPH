@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f2f0">
+  <title>Case review — AML Graph</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="site-pages.css">
+  <link rel="stylesheet" href="analyst.css">
+</head>
+<body>
+  <header>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="wordmark" href="index.html"><span aria-hidden="true"></span>AML GRAPH</a>
+      <div class="nav-links" id="nav-links">
+        <a href="approach.html">Approach</a><a href="patterns.html">Patterns</a>
+        <a href="queue.html" aria-current="page">Alert queue</a><a href="evaluation.html">Evaluation</a>
+      </div>
+      <div class="nav-actions">
+        <a class="nav-cta" href="queue.html">Back to queue</a>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="analyst-shell">
+    <section class="analyst-hero case-hero">
+      <p class="eyebrow">Analyst workflow · candidate review</p>
+      <h1 id="case-title">Loading case…</h1>
+      <p id="case-summary" class="section-lede"></p>
+      <p id="case-status" class="analyst-status" role="status"></p>
+      <div class="case-hero-actions">
+        <span id="case-score" class="score-pill">—</span>
+        <a id="report-link" class="nav-cta" href="queue.html">Print case report</a>
+      </div>
+    </section>
+
+    <section class="decision-panel" aria-label="Case decision">
+      <div>
+        <p class="section-kicker">Case decision</p>
+        <p id="decision-state" class="decision-state">Not reviewed</p>
+      </div>
+      <label class="note-field">Analyst note
+        <textarea id="analyst-note" maxlength="2000" rows="2" placeholder="Record the reason for your decision"></textarea>
+      </label>
+      <div class="decision-actions">
+        <button id="accept-case" class="decision-button accept" type="button">Accept</button>
+        <button id="dismiss-case" class="decision-button dismiss" type="button">Dismiss</button>
+      </div>
+    </section>
+
+    <section class="case-layout">
+      <article class="case-evidence">
+        <section>
+          <p class="section-kicker">Deterministic template narrative</p>
+          <p id="case-narrative" class="case-narrative">No saved template narrative.</p>
+        </section>
+        <section class="case-conditions">
+          <h2>Matched conditions</h2>
+          <ul id="matched-conditions"><li class="muted">Loading detector evidence…</li></ul>
+        </section>
+        <section class="case-transfers">
+          <div class="case-section-heading"><h2>Flagged pattern</h2><span id="transfer-count" class="muted"></span></div>
+          <div class="queue-table-wrap">
+            <table class="analyst-table">
+              <thead><tr><th>Time (UTC)</th><th>From</th><th>To</th><th>Amount</th><th>Currency</th></tr></thead>
+              <tbody id="case-transfers"><tr><td colspan="5" class="empty-row">Loading matched transfers…</td></tr></tbody>
+            </table>
+          </div>
+        </section>
+      </article>
+
+      <aside class="account-history-panel">
+        <p class="section-kicker">Account view</p>
+        <h2>Transfer history</h2>
+        <p class="muted">Choose an account to see its most recent transfers; matched pattern edges are highlighted.</p>
+        <div id="case-accounts" class="case-accounts"></div>
+        <p id="history-status" class="history-status" role="status"></p>
+        <ol id="account-history" class="account-history"></ol>
+      </aside>
+    </section>
+    <p class="analyst-footnote">A detector match is a candidate for review, not confirmation of money laundering. Saved alert narrative uses the project’s offline deterministic template.</p>
+  </main>
+  <script src="site-pages.js" defer></script>
+  <script src="case.js" defer></script>
+</body>
+</html>

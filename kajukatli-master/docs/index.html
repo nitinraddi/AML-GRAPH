@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f2f0">
+  <title>AML Graph · Static synthetic demo</title>
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="./">AML GRAPH</a>
+    <nav aria-label="Demo navigation">
+      <a href="PITCH.md">Pitch & results</a>
+      <a href="https://github.com/tanishshadow/kajukatli#who-is-this-for">Project README</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Read-only hosted demo</p>
+      <h1>Trace the pattern.<br><span>Review the evidence.</span></h1>
+      <p class="lede">A small static showcase of saved detector cases from IBM's synthetic HI-Small benchmark. No live backend, raw dataset, or analyst decisions are included.</p>
+      <p class="demo-banner" id="demo-banner">Demo data excerpt - synthetic</p>
+    </section>
+
+    <section class="demo-shell" aria-labelledby="sample-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Saved detector outputs</p>
+          <h2 id="sample-title">Sample cases</h2>
+        </div>
+        <span class="read-only">Read only</span>
+      </div>
+      <p id="demo-status" class="status" role="status">Loading the static sample bundle…</p>
+      <div class="selectors">
+        <label>Detector
+          <select id="detector-select" disabled></select>
+        </label>
+        <label>Sample case
+          <select id="case-select" disabled></select>
+        </label>
+      </div>
+      <article id="case-card" class="case-card" hidden>
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow" id="case-detector"></p>
+            <h3 id="case-title"></h3>
+          </div>
+          <span id="transfer-count" class="count-pill"></span>
+        </div>
+        <p id="case-time" class="case-time"></p>
+        <div>
+          <h4>Accounts in this pattern</h4>
+          <ul id="account-list" class="account-list"></ul>
+        </div>
+        <div class="transfer-section">
+          <h4>Matched transfers</h4>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Time (UTC)</th><th>From</th><th>To</th><th>Amount</th><th>Currency</th></tr></thead>
+              <tbody id="transfer-rows"></tbody>
+            </table>
+          </div>
+        </div>
+        <p class="candidate-note">A detector match is a synthetic benchmark candidate for review, not a finding of wrongdoing.</p>
+      </article>
+    </section>
+
+    <section class="credit">
+      <p class="eyebrow">Dataset credit & terms</p>
+      <p>This curated, transformed excerpt is derived from <a href="https://github.com/IBM/AML-Data">IBM AML-Data (HI-Small)</a>. The benchmark data is synthetic. The excerpt is shared under <a href="https://cdla.io/sharing-1-0/">CDLA-Sharing-1.0</a>; see IBM's <a href="https://github.com/IBM/AML-Data/blob/main/README.md">dataset notice</a>. Only up to three cases per detector and twenty transfers per case are included; this is not the full dataset.</p>
+      <p>Generated from saved local detector outputs. This hosted page is static and read-only; it does not persist decisions, load raw transaction files, or contact an AI service.</p>
+    </section>
+  </main>
+  <footer>
+    <span>AML Graph · Research prototype</span>
+    <a href="PITCH.md">Read the pitch and evaluation caveats</a>
+  </footer>
+  <script src="demo.js" defer></script>
+</body>
+</html>

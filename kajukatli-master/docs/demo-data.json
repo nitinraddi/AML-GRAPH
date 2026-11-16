@@ -1,0 +1,762 @@
+{
+  "banner": "Demo data excerpt - synthetic",
+  "read_only": true,
+  "source": "Saved detector outputs and a curated excerpt of IBM AML-Data (HI-Small).",
+  "excerpt_notice": "This file contains a small, transformed subset of synthetic benchmark data. It is provided under CDLA-Sharing-1.0; the excerpt is not the full dataset.",
+  "dataset": {
+    "name": "IBM AML-Data (HI-Small)",
+    "provider": "IBM",
+    "synthetic": true,
+    "source_url": "https://github.com/IBM/AML-Data",
+    "license": "CDLA-Sharing-1.0",
+    "license_url": "https://cdla.io/sharing-1-0/"
+  },
+  "limits": {
+    "cases_per_detector": 3,
+    "transfers_per_case": 20
+  },
+  "detectors": [
+    {
+      "id": "fan",
+      "label": "Fan-in / fan-out",
+      "cases": [
+        {
+          "id": "fan-01",
+          "typology": "fan_in",
+          "accounts": [
+            "0240971:80EE0ABB0",
+            "0241901:80F479BB0",
+            "0040836:80F1238A0"
+          ],
+          "start": "2022-09-01T18:16:00Z",
+          "end": "2022-09-06T01:21:00Z",
+          "transfers": [
+            {
+              "time": "2022-09-01T18:16:00Z",
+              "from": "0040836:80F1238A0",
+              "to": "0241901:80F479BB0",
+              "amount": 44.81,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-01T18:17:00Z",
+              "from": "0040836:80F1238A0",
+              "to": "0241901:80F479BB0",
+              "amount": 102.83,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-02T07:34:00Z",
+              "from": "0040836:80F1238A0",
+              "to": "0241901:80F479BB0",
+              "amount": 44.81,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-02T07:41:00Z",
+              "from": "0040836:80F1238A0",
+              "to": "0241901:80F479BB0",
+              "amount": 102.83,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-02T18:40:00Z",
+              "from": "0240971:80EE0ABB0",
+              "to": "0241901:80F479BB0",
+              "amount": 6810.31,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-02T18:52:00Z",
+              "from": "0240971:80EE0ABB0",
+              "to": "0241901:80F479BB0",
+              "amount": 3587.61,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-03T07:07:00Z",
+              "from": "0040836:80F1238A0",
+              "to": "0241901:80F479BB0",
+              "amount": 44.81,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-03T07:19:00Z",
+              "from": "0040836:80F1238A0",
+              "to": "0241901:80F479BB0",
+              "amount": 102.83,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-04T19:02:00Z",
+              "from": "0040836:80F1238A0",
+              "to": "0241901:80F479BB0",
+              "amount": 102.83,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-04T19:12:00Z",
+              "from": "0040836:80F1238A0",
+              "to": "0241901:80F479BB0",
+              "amount": 44.81,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-05T08:10:00Z",
+              "from": "0040836:80F1238A0",
+              "to": "0241901:80F479BB0",
+              "amount": 102.83,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-05T08:26:00Z",
+              "from": "0040836:80F1238A0",
+              "to": "0241901:80F479BB0",
+              "amount": 44.81,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-06T01:18:00Z",
+              "from": "0040836:80F1238A0",
+              "to": "0241901:80F479BB0",
+              "amount": 102.83,
+              "currency": "Swiss Franc"
+            },
+            {
+              "time": "2022-09-06T01:21:00Z",
+              "from": "0040836:80F1238A0",
+              "to": "0241901:80F479BB0",
+              "amount": 44.81,
+              "currency": "Swiss Franc"
+            }
+          ]
+        },
+        {
+          "id": "fan-02",
+          "typology": "fan_out",
+          "accounts": [
+            "0113:8117BF8A0",
+            "0244187:8117C0140",
+            "0119:811817DC0"
+          ],
+          "start": "2022-09-01T17:51:00Z",
+          "end": "2022-09-02T06:28:00Z",
+          "transfers": [
+            {
+              "time": "2022-09-01T17:51:00Z",
+              "from": "0244187:8117C0140",
+              "to": "0113:8117BF8A0",
+              "amount": 13420.83,
+              "currency": "Shekel"
+            },
+            {
+              "time": "2022-09-01T17:53:00Z",
+              "from": "0244187:8117C0140",
+              "to": "0119:811817DC0",
+              "amount": 9404.88,
+              "currency": "Shekel"
+            },
+            {
+              "time": "2022-09-02T06:28:00Z",
+              "from": "0244187:8117C0140",
+              "to": "0119:811817DC0",
+              "amount": 9404.88,
+              "currency": "Shekel"
+            }
+          ]
+        },
+        {
+          "id": "fan-03",
+          "typology": "fan_in",
+          "accounts": [
+            "0011899:811A03320",
+            "03932:811A411F0",
+            "0348276:811A45EE0"
+          ],
+          "start": "2022-09-02T01:04:00Z",
+          "end": "2022-09-02T23:05:00Z",
+          "transfers": [
+            {
+              "time": "2022-09-02T01:04:00Z",
+              "from": "03932:811A411F0",
+              "to": "0011899:811A03320",
+              "amount": 515.37,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-02T23:05:00Z",
+              "from": "0348276:811A45EE0",
+              "to": "0011899:811A03320",
+              "amount": 34.63,
+              "currency": "US Dollar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scatter_gather",
+      "label": "Scatter-gather / gather-scatter",
+      "cases": [
+        {
+          "id": "scatter_gather-01",
+          "typology": "scatter_gather",
+          "accounts": [
+            "01688:80082C6C0",
+            "011405:800EE6B70",
+            "013345:802288860",
+            "01665:800F31270",
+            "001024:80098A3D0",
+            "02843:80093B290"
+          ],
+          "start": "2022-09-05T01:54:00Z",
+          "end": "2022-09-07T08:00:00Z",
+          "transfers": [
+            {
+              "time": "2022-09-05T01:54:00Z",
+              "from": "011405:800EE6B70",
+              "to": "02843:80093B290",
+              "amount": 15480.81,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-05T03:58:00Z",
+              "from": "011405:800EE6B70",
+              "to": "01688:80082C6C0",
+              "amount": 10761.27,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-05T14:40:00Z",
+              "from": "011405:800EE6B70",
+              "to": "013345:802288860",
+              "amount": 3606.3,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-05T16:49:00Z",
+              "from": "011405:800EE6B70",
+              "to": "01665:800F31270",
+              "amount": 12600.93,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-07T02:39:00Z",
+              "from": "02843:80093B290",
+              "to": "001024:80098A3D0",
+              "amount": 11335.43,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-07T05:36:00Z",
+              "from": "01688:80082C6C0",
+              "to": "001024:80098A3D0",
+              "amount": 7574.17,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-07T06:57:00Z",
+              "from": "013345:802288860",
+              "to": "001024:80098A3D0",
+              "amount": 2898.48,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-07T08:00:00Z",
+              "from": "01665:800F31270",
+              "to": "001024:80098A3D0",
+              "amount": 10753.63,
+              "currency": "Euro"
+            }
+          ]
+        },
+        {
+          "id": "scatter_gather-02",
+          "typology": "gather_scatter",
+          "accounts": [
+            "013345:802951760",
+            "003045:801F93340",
+            "023555:8024AA440",
+            "0020248:810CA4EE0",
+            "005328:8020531C0",
+            "0210617:806912610",
+            "015010:802F2D5C0"
+          ],
+          "start": "2022-09-01T10:36:00Z",
+          "end": "2022-09-03T09:18:00Z",
+          "transfers": [
+            {
+              "time": "2022-09-01T10:36:00Z",
+              "from": "003045:801F93340",
+              "to": "023555:8024AA440",
+              "amount": 46088.0,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-01T10:51:00Z",
+              "from": "003045:801F93340",
+              "to": "023555:8024AA440",
+              "amount": 4889.41,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-01T17:13:00Z",
+              "from": "005328:8020531C0",
+              "to": "023555:8024AA440",
+              "amount": 2.15,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-01T17:15:00Z",
+              "from": "005328:8020531C0",
+              "to": "023555:8024AA440",
+              "amount": 238.98,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-01T17:20:00Z",
+              "from": "005328:8020531C0",
+              "to": "023555:8024AA440",
+              "amount": 183.48,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T09:49:00Z",
+              "from": "023555:8024AA440",
+              "to": "0020248:810CA4EE0",
+              "amount": 5844.43,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T09:50:00Z",
+              "from": "023555:8024AA440",
+              "to": "0020248:810CA4EE0",
+              "amount": 456.59,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T10:37:00Z",
+              "from": "003045:801F93340",
+              "to": "023555:8024AA440",
+              "amount": 4889.41,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T10:56:00Z",
+              "from": "003045:801F93340",
+              "to": "023555:8024AA440",
+              "amount": 46088.0,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T11:48:00Z",
+              "from": "005328:8020531C0",
+              "to": "023555:8024AA440",
+              "amount": 238.98,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T11:54:00Z",
+              "from": "005328:8020531C0",
+              "to": "023555:8024AA440",
+              "amount": 183.48,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T11:56:00Z",
+              "from": "005328:8020531C0",
+              "to": "023555:8024AA440",
+              "amount": 2.15,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T13:36:00Z",
+              "from": "023555:8024AA440",
+              "to": "015010:802F2D5C0",
+              "amount": 189.39,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T13:40:00Z",
+              "from": "023555:8024AA440",
+              "to": "015010:802F2D5C0",
+              "amount": 646.82,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T13:48:00Z",
+              "from": "023555:8024AA440",
+              "to": "015010:802F2D5C0",
+              "amount": 409.31,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T18:51:00Z",
+              "from": "023555:8024AA440",
+              "to": "0210617:806912610",
+              "amount": 859.29,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T19:31:00Z",
+              "from": "023555:8024AA440",
+              "to": "013345:802951760",
+              "amount": 52552.09,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T19:33:00Z",
+              "from": "023555:8024AA440",
+              "to": "013345:802951760",
+              "amount": 15025.0,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-02T19:44:00Z",
+              "from": "023555:8024AA440",
+              "to": "013345:802951760",
+              "amount": 16847.91,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-03T09:18:00Z",
+              "from": "023555:8024AA440",
+              "to": "013345:802951760",
+              "amount": 16847.91,
+              "currency": "Euro"
+            }
+          ]
+        },
+        {
+          "id": "scatter_gather-03",
+          "typology": "gather_scatter",
+          "accounts": [
+            "00701:8009DABD0",
+            "011107:800BBE370",
+            "01674:805220B00",
+            "018511:810403EA0",
+            "003229:8018058F0",
+            "002952:802C58090"
+          ],
+          "start": "2022-09-01T02:12:00Z",
+          "end": "2022-09-01T16:08:00Z",
+          "transfers": [
+            {
+              "time": "2022-09-01T02:12:00Z",
+              "from": "011107:800BBE370",
+              "to": "003229:8018058F0",
+              "amount": 833.34,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-01T02:22:00Z",
+              "from": "011107:800BBE370",
+              "to": "003229:8018058F0",
+              "amount": 878.98,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-01T02:42:00Z",
+              "from": "003229:8018058F0",
+              "to": "002952:802C58090",
+              "amount": 316.92,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-01T02:48:00Z",
+              "from": "003229:8018058F0",
+              "to": "002952:802C58090",
+              "amount": 651.75,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-01T07:14:00Z",
+              "from": "00701:8009DABD0",
+              "to": "003229:8018058F0",
+              "amount": 9067.59,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-01T07:26:00Z",
+              "from": "00701:8009DABD0",
+              "to": "003229:8018058F0",
+              "amount": 12653.85,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-01T08:25:00Z",
+              "from": "003229:8018058F0",
+              "to": "01674:805220B00",
+              "amount": 211.44,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-01T08:29:00Z",
+              "from": "003229:8018058F0",
+              "to": "01674:805220B00",
+              "amount": 130.64,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-01T16:06:00Z",
+              "from": "003229:8018058F0",
+              "to": "018511:810403EA0",
+              "amount": 10811.22,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-01T16:08:00Z",
+              "from": "003229:8018058F0",
+              "to": "018511:810403EA0",
+              "amount": 6856.94,
+              "currency": "US Dollar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cycle",
+      "label": "Time-respecting cycles",
+      "cases": [
+        {
+          "id": "cycle-01",
+          "typology": "cycle",
+          "accounts": [
+            "011107:80171C720",
+            "002454:806E8ADD0",
+            "0215803:806CBBE20",
+            "018200:803118000",
+            "0217125:8073CD950"
+          ],
+          "start": "2022-09-07T16:53:00Z",
+          "end": "2022-09-08T19:19:00Z",
+          "transfers": [
+            {
+              "time": "2022-09-07T16:53:00Z",
+              "from": "0215803:806CBBE20",
+              "to": "011107:80171C720",
+              "amount": 14546.79,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-07T19:57:00Z",
+              "from": "011107:80171C720",
+              "to": "018200:803118000",
+              "amount": 97428.6,
+              "currency": "Yuan"
+            },
+            {
+              "time": "2022-09-08T12:38:00Z",
+              "from": "018200:803118000",
+              "to": "002454:806E8ADD0",
+              "amount": 14546.79,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-08T16:58:00Z",
+              "from": "002454:806E8ADD0",
+              "to": "0217125:8073CD950",
+              "amount": 1131798.62,
+              "currency": "Ruble"
+            },
+            {
+              "time": "2022-09-08T19:19:00Z",
+              "from": "0217125:8073CD950",
+              "to": "0215803:806CBBE20",
+              "amount": 12414.23,
+              "currency": "Euro"
+            }
+          ]
+        },
+        {
+          "id": "cycle-02",
+          "typology": "cycle",
+          "accounts": [
+            "0111312:8045732A0",
+            "0032564:80C1EB8B0",
+            "0014:81016E050"
+          ],
+          "start": "2022-09-07T16:22:00Z",
+          "end": "2022-09-09T03:58:00Z",
+          "transfers": [
+            {
+              "time": "2022-09-07T16:22:00Z",
+              "from": "0014:81016E050",
+              "to": "0032564:80C1EB8B0",
+              "amount": 134640.09,
+              "currency": "Mexican Peso"
+            },
+            {
+              "time": "2022-09-08T14:01:00Z",
+              "from": "0032564:80C1EB8B0",
+              "to": "0111312:8045732A0",
+              "amount": 633401.44,
+              "currency": "Yen"
+            },
+            {
+              "time": "2022-09-09T03:58:00Z",
+              "from": "0111312:8045732A0",
+              "to": "0014:81016E050",
+              "amount": 18355.5,
+              "currency": "Shekel"
+            }
+          ]
+        },
+        {
+          "id": "cycle-03",
+          "typology": "cycle",
+          "accounts": [
+            "0017400:80DFAB280",
+            "003489:8014C0730",
+            "024811:80B8C9580",
+            "002824:801DAF060"
+          ],
+          "start": "2022-09-05T04:04:00Z",
+          "end": "2022-09-08T05:19:00Z",
+          "transfers": [
+            {
+              "time": "2022-09-05T04:04:00Z",
+              "from": "0017400:80DFAB280",
+              "to": "024811:80B8C9580",
+              "amount": 11199.0,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-06T13:13:00Z",
+              "from": "024811:80B8C9580",
+              "to": "003489:8014C0730",
+              "amount": 10938.11,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-06T17:57:00Z",
+              "from": "003489:8014C0730",
+              "to": "002824:801DAF060",
+              "amount": 12817.1,
+              "currency": "US Dollar"
+            },
+            {
+              "time": "2022-09-08T05:19:00Z",
+              "from": "002824:801DAF060",
+              "to": "0017400:80DFAB280",
+              "amount": 12817.1,
+              "currency": "US Dollar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pass_through",
+      "label": "Rapid pass-through",
+      "cases": [
+        {
+          "id": "pass_through-01",
+          "typology": "pass_through",
+          "accounts": [
+            "0010060:8044BB840",
+            "015:803851A50",
+            "070:100428738",
+            "0210185:80431B5A0"
+          ],
+          "start": "2022-09-08T08:24:00Z",
+          "end": "2022-09-09T04:01:00Z",
+          "transfers": [
+            {
+              "time": "2022-09-08T08:24:00Z",
+              "from": "070:100428738",
+              "to": "015:803851A50",
+              "amount": 41467.89,
+              "currency": "Yen"
+            },
+            {
+              "time": "2022-09-08T10:11:00Z",
+              "from": "015:803851A50",
+              "to": "0210185:80431B5A0",
+              "amount": 33417.51,
+              "currency": "Yen"
+            },
+            {
+              "time": "2022-09-09T04:01:00Z",
+              "from": "0210185:80431B5A0",
+              "to": "0010060:8044BB840",
+              "amount": 29630.9,
+              "currency": "Yen"
+            }
+          ]
+        },
+        {
+          "id": "pass_through-02",
+          "typology": "pass_through",
+          "accounts": [
+            "012:8002964E0",
+            "0215803:813AF58D0",
+            "026860:803122330",
+            "02591:800552570"
+          ],
+          "start": "2022-09-06T02:12:00Z",
+          "end": "2022-09-07T10:26:00Z",
+          "transfers": [
+            {
+              "time": "2022-09-06T02:12:00Z",
+              "from": "012:8002964E0",
+              "to": "02591:800552570",
+              "amount": 99.86,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-06T20:34:00Z",
+              "from": "02591:800552570",
+              "to": "026860:803122330",
+              "amount": 99.17,
+              "currency": "Euro"
+            },
+            {
+              "time": "2022-09-07T10:26:00Z",
+              "from": "026860:803122330",
+              "to": "0215803:813AF58D0",
+              "amount": 92.07,
+              "currency": "Euro"
+            }
+          ]
+        },
+        {
+          "id": "pass_through-03",
+          "typology": "pass_through",
+          "accounts": [
+            "0024779:8091021C0",
+            "0025170:809336E20",
+            "0126984:809F77AE0",
+            "0122055:80997C3E0"
+          ],
+          "start": "2022-09-05T07:37:00Z",
+          "end": "2022-09-07T04:46:00Z",
+          "transfers": [
+            {
+              "time": "2022-09-05T07:37:00Z",
+              "from": "0024779:8091021C0",
+              "to": "0025170:809336E20",
+              "amount": 338.33,
+              "currency": "Canadian Dollar"
+            },
+            {
+              "time": "2022-09-06T14:05:00Z",
+              "from": "0025170:809336E20",
+              "to": "0122055:80997C3E0",
+              "amount": 357.46,
+              "currency": "Canadian Dollar"
+            },
+            {
+              "time": "2022-09-07T04:46:00Z",
+              "from": "0122055:80997C3E0",
+              "to": "0126984:809F77AE0",
+              "amount": 333.78,
+              "currency": "Canadian Dollar"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
